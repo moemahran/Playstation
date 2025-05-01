@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberty Academy - Learn Libertarian Principles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <i class="fas fa-balance-scale text-blue-600 text-2xl mr-2"></i>
+                            <span class="font-semibold text-gray-900 text-lg">Liberty Academy</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#courses" class="py-4 px-2 text-gray-700 hover:text-blue-600 transition duration-300">Courses</a>
+                    <a href="#about" class="py-4 px-2 text-gray-700 hover:text-blue-600 transition duration-300">About</a>
+                    <a href="#resources" class="py-4 px-2 text-gray-700 hover:text-blue-600 transition duration-300">Resources</a>
+                    <a href="#signup" class="py-4 px-2 text-white bg-blue-600 rounded hover:bg-blue-700 transition duration-300">Join Us</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-gray-700 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Master Libertarian Philosophy</h1>
+                <p class="text-xl md:text-2xl mb-8">Discover the principles of individual liberty, free markets, and limited government through our comprehensive courses.</p>
+                <a href="#signup" class="bg-white text-blue-600 hover:bg-gray-100 py-3 px-8 rounded-full text-lg font-semibold transition duration-300 inline-block">Start Learning Free</a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Liberty" class="rounded-lg shadow-2xl floating max-w-xs md:max-w-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Why Learn Libertarianism?</h2>
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-gray-50 p-6 rounded-lg h-full">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-user-shield text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Individual Rights</h3>
+                        <p class="text-gray-600">Understand the philosophical foundation of natural rights and how they form the basis of a free society.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-gray-50 p-6 rounded-lg h-full">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-chart-line text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Free Markets</h3>
+                        <p class="text-gray-600">Learn how voluntary exchange and price signals create prosperity better than any central planner could.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-gray-50 p-6 rounded-lg h-full">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-gavel text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Limited Government</h3>
+                        <p class="text-gray-600">Discover why concentrating power leads to abuse and how decentralized systems protect liberty.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Featured Courses</h2>
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md course-card transition duration-300 h-full">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Libertarian Foundations" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Libertarian Foundations</h3>
+                            <p class="text-gray-600 mb-4">Explore the core principles of libertarianism from John Locke to Murray Rothbard.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-blue-600 font-medium">Free</span>
+                                <a href="#signup" class="text-blue-600 hover:text-blue-800 font-medium">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md course-card transition duration-300 h-full">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Austrian Economics" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Austrian Economics</h3>
+                            <p class="text-gray-600 mb-4">Understand the economic theories of Mises, Hayek, and the Austrian School.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-blue-600 font-medium">Free</span>
+                                <a href="#signup" class="text-blue-600 hover:text-blue-800 font-medium">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md course-card transition duration-300 h-full">
+                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Anarcho-Capitalism" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Anarcho-Capitalism</h3>
+                            <p class="text-gray-600 mb-4">Examine the case for a stateless society with private protection agencies.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-blue-600 font-medium">Free</span>
+                                <a href="#signup" class="text-blue-600 hover:text-blue-800 font-medium">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="About Liberty Academy" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">About Liberty Academy</h2>
+                    <p class="text-gray-600 mb-4">Liberty Academy was founded to educate people about libertarian philosophy, classical liberal ideas, and free-market principles. Our mission is to create a society where individuals are free to pursue their own happiness without unnecessary government interference.</p>
+                    <p class="text-gray-600 mb-4">We believe that education is the most powerful tool for change. By teaching people about the moral and practical benefits of liberty, we can create a freer, more prosperous world.</p>
+                    <p class="text-gray-600">Our courses are designed by leading libertarian scholars and educators who are passionate about spreading these ideas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">What Our Students Say</h2>
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md h-full">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Liberty Academy completely changed my perspective on government and individual rights. The courses are well-structured and thought-provoking."</p>
+                        <div class="flex items-center">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John D." class="w-10 h-10 rounded-full mr-3">
+                            <div>
+                                <h4 class="font-semibold">John D.</h4>
+                                <p class="text-gray-500 text-sm">Political Science Student</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md h-full">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">"The Austrian Economics course was eye-opening. I finally understand why central planning fails and how markets really work."</p>
+                        <div class="flex items-center">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah K." class="w-10 h-10 rounded-full mr-3">
+                            <div>
+                                <h4 class="font-semibold">Sarah K.</h4>
+                                <p class="text-gray-500 text-sm">Economics Graduate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md h-full">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">"As someone new to libertarianism, I found the Foundations course incredibly accessible. The instructors make complex ideas simple."</p>
+                        <div class="flex items-center">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Michael T." class="w-10 h-10 rounded-full mr-3">
+                            <div>
+                                <h4 class="font-semibold">Michael T.</h4>
+                                <p class="text-gray-500 text-sm">Small Business Owner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section id="signup" class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Join Our Community of Liberty Lovers</h2>
+                <p class="text-xl mb-8">Sign up to get free access to our courses and resources. We'll send you valuable content about libertarianism straight to your inbox.</p>
+                
+                <form id="emailSignupForm" class="max-w-md mx-auto">
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <input type="email" id="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
+                        <button type="submit" class="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition duration-300">Sign Up Free</button>
+                    </div>
+                    <p class="text-sm mt-2 text-blue-100">We respect your privacy. Unsubscribe at any time.</p>
+                </form>
+                
+                <div id="thankYouMessage" class="hidden mt-8 bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-check-circle text-green-500 text-5xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Thank You!</h3>
+                    <p>You've been added to our community. Check your email for confirmation and your first lesson.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Free Resources</h2>
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full md:w-1/4 px-4 mb-8">
+                    <div class="bg-gray-50 p-6 rounded-lg h-full flex flex-col">
+                        <div class="text-blue-600 mb-4 text-4xl">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Reading List</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Curated collection of essential libertarian books and articles.</p>
+                        <a href="#signup" class="text-blue-600 hover:text-blue-800 font-medium">Get Access</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/4 px-4 mb-8">
+                    <div class="bg-gray-50 p-6 rounded-lg h-full flex flex-col">
+                        <div class="text-blue-600 mb-4 text-4xl">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Video Library</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Documentaries and lectures from top libertarian thinkers.</p>
+                        <a href="#signup" class="text-blue-600 hover:text-blue-800 font-medium">Get Access</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/4 px-4 mb-8">
+                    <div class="bg-gray-50 p-6 rounded-lg h-full flex flex-col">
+                        <div class="text-blue-600 mb-4 text-4xl">
+                            <i class="fas fa-podcast"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Podcasts</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">The best libertarian podcasts covering current events.</p>
+                        <a href="#signup" class="text-blue-600 hover:text-blue-800 font-medium">Get Access</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/4 px-4 mb-8">
+                    <div class="bg-gray-50 p-6 rounded-lg h-full flex flex-col">
+                        <div class="text-blue-600 mb-4 text-4xl">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Community</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Connect with like-minded individuals in our forums.</p>
+                        <a href="#signup" class="text-blue-600 hover:text-blue-800 font-medium">Get Access</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-balance-scale text-blue-400 text-2xl mr-2"></i>
+                        <span class="font-semibold text-lg">Liberty Academy</span>
+                    </div>
+                    <p class="text-gray-400 max-w-xs">Educating the next generation about the principles of liberty and individual freedom.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Courses</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Foundations</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Economics</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Philosophy</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">History</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Books</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Videos</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Podcasts</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Company</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">About</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 Liberty Academy. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-youtube text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Handle form submission
+        document.getElementById('emailSignupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get the email value
+            const email = document.getElementById('email').value;
+            
+            // In a real application, you would send this to your backend
+            // For this demo, we'll just simulate it
+            console.log('Email submitted:', email);
+            
+            // Hide the form and show thank you message
+            document.getElementById('emailSignupForm').classList.add('hidden');
+            document.getElementById('thankYouMessage').classList.remove('hidden');
+            
+            // Reset form (optional)
+            this.reset();
+            
+            // In a real app, you might redirect or do something else here
+        });
+
+        // Mobile menu toggle (if needed)
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', function() {
+                // You would implement mobile menu toggle here
+                console.log('Mobile menu clicked');
+            });
+        }
+    </script>
+</body>
+</html>

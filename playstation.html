@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation 5 | Next-Gen Gaming Console</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #0066cc 0%, #cc0000 100%);
+        }
+        .price-tag {
+            background: linear-gradient(90deg, #0066cc 0%, #cc0000 100%);
+        }
+        .feature-icon-blue {
+            color: #0066cc;
+        }
+        .feature-icon-red {
+            color: #cc0000;
+        }
+        .btn-primary {
+            background: linear-gradient(90deg, #0066cc 0%, #cc0000 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .game-card {
+            transition: all 0.3s ease;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        .ps5-image {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fab fa-playstation text-3xl text-blue-600 mr-2"></i>
+                        <span class="text-xl font-bold text-gray-900">PlayStation</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">Products</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">Games</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">Accessories</a>
+                    <a href="#" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">Support</a>
+                </div>
+                <div class="flex items-center">
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium">
+                        Pre-order Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">PlayStation 5</h1>
+                    <p class="text-xl mb-8">Experience lightning-fast loading with an ultra-high speed SSD, deeper immersion with support for haptic feedback, adaptive triggers and 3D Audio.</p>
+                    <div class="flex items-center mb-8">
+                        <div class="price-tag text-white px-6 py-3 rounded-full text-xl font-bold mr-6">
+                            $499.99
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-star text-yellow-400 mr-1"></i>
+                            <span class="font-medium">4.9/5 (2,345 reviews)</span>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4">
+                        <button class="btn-primary text-white px-8 py-3 rounded-md text-lg font-bold">
+                            Buy Now
+                        </button>
+                        <button class="bg-white text-gray-900 px-8 py-3 rounded-md text-lg font-bold hover:bg-gray-100">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <img src="https://i.imgur.com/3Q6vQ1h.png" alt="PlayStation 5" class="ps5-image h-80 md:h-96">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Next-Gen Gaming Features</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="feature-icon-blue text-4xl mb-4">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Lightning Speed</h3>
+                    <p class="text-gray-600">Experience lightning-fast loading with an ultra-high speed SSD, deeper immersion with support for haptic feedback, adaptive triggers and 3D Audio.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="feature-icon-red text-4xl mb-4">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Adaptive Triggers</h3>
+                    <p class="text-gray-600">Experience dynamic resistance with the DualSense wireless controller's adaptive triggers that simulate actions like drawing a bow or accelerating a vehicle.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="feature-icon-blue text-4xl mb-4">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">3D Audio</h3>
+                    <p class="text-gray-600">Immerse yourself in soundscapes where you can pinpoint the direction of sounds with Tempest 3D AudioTech, available through compatible headsets.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Technical Specs -->
+    <div class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Technical Specifications</h2>
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="grid md:grid-cols-2">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-6 text-blue-600">PlayStation 5 Console</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-microchip text-red-500 mt-1 mr-3"></i>
+                                <span><strong>CPU:</strong> x86-64-AMD Ryzen™ Zen 2, 8 Cores / 16 Threads, Variable frequency, up to 3.5 GHz</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-memory text-red-500 mt-1 mr-3"></i>
+                                <span><strong>GPU:</strong> AMD Radeon™ RDNA 2-based graphics engine, Ray Tracing Acceleration, Variable frequency, up to 2.23 GHz (10.3 TFLOPS)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-hdd text-red-500 mt-1 mr-3"></i>
+                                <span><strong>SSD:</strong> 825GB, 5.5GB/s Read Bandwidth (Raw)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-network-wired text-red-500 mt-1 mr-3"></i>
+                                <span><strong>I/O Throughput:</strong> 8-9GB/s (Compressed)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-8 bg-gray-50">
+                        <h3 class="text-xl font-bold mb-6 text-blue-600">DualSense Wireless Controller</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-vibration text-red-500 mt-1 mr-3"></i>
+                                <span><strong>Haptic Feedback:</strong> Experience varying force and tension at your fingertips</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-bolt text-red-500 mt-1 mr-3"></i>
+                                <span><strong>Adaptive Triggers:</strong> Dynamic resistance for immersive actions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-microphone text-red-500 mt-1 mr-3"></i>
+                                <span><strong>Built-in Microphone:</strong> Chat with friends without a headset</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-battery-full text-red-500 mt-1 mr-3"></i>
+                                <span><strong>Battery:</strong> USB Type-C® port for charging</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popular Games -->
+    <div class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Popular PS5 Games</h2>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="game-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <img src="https://i.imgur.com/Jj1Yl5E.jpg" alt="Spider-Man: Miles Morales" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Spider-Man: Miles Morales</h3>
+                        <p class="text-gray-600 text-sm mb-2">Experience the rise of Miles Morales</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-blue-600">$49.99</span>
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <img src="https://i.imgur.com/5tBmYQk.jpg" alt="Demon's Souls" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Demon's Souls</h3>
+                        <p class="text-gray-600 text-sm mb-2">A brutal remake of the classic</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-blue-600">$59.99</span>
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <img src="https://i.imgur.com/8Z3Q3v9.jpg" alt="Ratchet & Clank: Rift Apart" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Ratchet & Clank: Rift Apart</h3>
+                        <p class="text-gray-600 text-sm mb-2">Jump between dimensions instantly</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-blue-600">$69.99</span>
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <img src="https://i.imgur.com/9Q1Yl5E.jpg" alt="Returnal" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Returnal</h3>
+                        <p class="text-gray-600 text-sm mb-2">Break the cycle of chaos</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-blue-600">$59.99</span>
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready for Next-Gen Gaming?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Join millions of players worldwide and experience gaming like never before with PlayStation 5.</p>
+            <button class="btn-primary text-white px-12 py-4 rounded-md text-xl font-bold">
+                Order Now <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">PlayStation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About SIE</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">PlayStation Studios</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">PlayStation Productions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">PS5</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">PS4</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">PS VR</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">PSN Status</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Repairs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p class="text-gray-400">Subscribe to our newsletter</p>
+                    <div class="mt-2 flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l text-gray-900 w-full">
+                        <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 Sony Interactive Entertainment LLC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for game cards on hover
+        document.querySelectorAll('.game-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.15)';
+            });
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = '';
+                this.style.boxShadow = '';
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple cart counter (would be more complex in a real app)
+        let cartCount = 0;
+        document.querySelectorAll('button:contains("Add to Cart")').forEach(button => {
+            button.addEventListener('click', function() {
+                cartCount++;
+                console.log(`Added to cart! Total items: ${cartCount}`);
+                // In a real app, you would update the UI with the cart count
+            });
+        });
+    </script>
+</body>
+</html>
